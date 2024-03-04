@@ -1,0 +1,48 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif ;
+}
+.heroSection{
+background: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+background-size: cover;
+background-position: center;
+color: white;
+min-height: 90vh;
+}
+.navb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 20px 50px;
+}
+.navb a{
+    color: white;
+    text-decoration: none;
+    
+}
+.getIt{
+    padding-top: 30px;
+}
+.Menu{
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    padding-right: 100px;
+}
+@media only screen and (max-width: 600px){
+    .link{
+        display: none;
+    }
+}
+    
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 0px 0px 40px ;
+}
+    
