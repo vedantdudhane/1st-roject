@@ -21,6 +21,7 @@ min-height: 90vh;
 .navb a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
     
 }
 .getIt{
@@ -32,17 +33,60 @@ min-height: 90vh;
     padding-top: 30px;
     padding-right: 100px;
 }
+
+    
+.image{
+    height: 90px;
+    padding: 10px 0px 0px 40px ;
+}
+ .Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    gap: 2px;
+    height: calc(90vh-50px);
+ }   
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: lighter;
+}
+.pending{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: lighter;
+}
+.inputContainer{
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+    border-radius: 20px;
+
+}   
+.ip1,
+.ip2{
+padding: 5px;
+border: none;
+}
+.ip1{
+    width: 32%;
+    border-right: 2px solid black;
+}
+.ip2{
+    width: 65%;
+}
 @media only screen and (max-width: 600px){
     .link{
         display: none;
     }
+    .Container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
 }
-    
-.image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    padding: 10px 0px 0px 40px ;
-}
-    
