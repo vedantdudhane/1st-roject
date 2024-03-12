@@ -80,6 +80,34 @@ border: none;
 .ip2{
     width: 65%;
 }
+.India{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.flags{
+height: 50px;
+width: 60px;
+margin: 10px;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    forced-color-adjust: #696969;
+}
+.p2{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+forced-color-adjust: #696969;
+}
+
+
 @media only screen and (max-width: 600px){
     .link{
         display: none;
@@ -88,5 +116,11 @@ border: none;
         flex-direction: column;
         background-color: transparent;
         width: 100%;
+    }
+    .ip1,
+    .ip2{
+    padding: 18px;
+    border-radius: 10px;
+    width: 98%;
     }
 }
