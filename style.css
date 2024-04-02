@@ -106,7 +106,30 @@ align-items: center;
 font-size: 25px;
 forced-color-adjust: #696969;
 }
+.location{
+    width: 100%;
+   margin: 50px ;
 
+display: grid;
+gap: 12px;
+grid-template-columns: repeat(3 , 1fr);
+grid-template-rows: repeat(10 , 1fr);
+}
+.l{
+width: 120px;
+height: 40px;
+border: 1px solid rgb(121, 113, 113);
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 10px;
+text-overflow: ellipsis;
+}
+.l a{
+    color: black;
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 600px){
     .link{
