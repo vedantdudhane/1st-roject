@@ -134,7 +134,71 @@ text-overflow: ellipsis;
     color: black;
     text-decoration: none;
 }
+.GetTheApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 150px;
+    
+}
+.GetTheApp .left img{
+    
+    width: 250px;
+}
+.GetTheApp .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.right h1{
+    font-weight: 500;
+    font-size: 45px;
+}  
+.right p{
+    font-size: 18px;
+    color: rgb(54, 54, 54);
+}
+.radio1 , .radio2 {
+    color: rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.applink input{
+    height: 40px;
+    width: 300px;
+    border-radius: 5%;
+    border: 1.5px solid grey;
+    
+}
+.applink button{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(255, 79, 95);
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.DownloadApp h5{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: rgb(156, 156, 156);
+}
+.Pl img{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
 
+}
 @media only screen and (max-width: 600px){
     .link{
         display: none;
