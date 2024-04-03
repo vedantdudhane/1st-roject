@@ -9,7 +9,6 @@ background: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a
 background-size: cover;
 background-position: center;
 color: white;
-min-height: 90vh;
 }
 .navb{
     display: flex;
@@ -107,17 +106,22 @@ font-size: 25px;
 forced-color-adjust: #696969;
 }
 .location{
-    width: 100%;
+    max-width: 100%;
    margin: 50px ;
 
-display: grid;
+/* display: grid;
 gap: 12px;
 grid-template-columns: repeat(3 , 1fr);
-grid-template-rows: repeat(10 , 1fr);
+grid-template-rows: repeat(10 , 1fr); */
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 .l{
-width: 120px;
-height: 40px;
+text-transform: uppercase;
+margin-top: 20px;
+width: 400px;
+height: 80px;
 border: 1px solid rgb(121, 113, 113);
 display: flex;
 justify-content: center;
@@ -146,4 +150,31 @@ text-overflow: ellipsis;
     border-radius: 10px;
     width: 98%;
     }
+}
+
+@media(max-width: 1440px) {
+    .l {
+        width: 280px;
+        height: 50px;
+    }
+}
+
+@media(max-width: 1140px){
+     .para, .p2 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 990px) {
+    .l {
+        width: 80vw;
+        height: 70px;
+    }
+    .location {
+        flex-direction: column;
+    }
+}
+
+.India, .para, .p2 {
+    text-align: center;
 }
