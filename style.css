@@ -186,6 +186,7 @@ text-overflow: ellipsis;
     border: none;
     border-radius: 5%;
     cursor: pointer;
+    margin-left: 10px;
 }
 .DownloadApp h5{
     font-size: 15px;
@@ -199,6 +200,42 @@ text-overflow: ellipsis;
     cursor: pointer;
 
 }
+.Explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    padding: 100px;
+}
+.Exp p{
+    
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+.Exp button{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 60px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:15px ;
+    padding-top: 5px;
+    margin: 15px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    border-color: grey;
+    border-width: 0.1px;
+    border-radius: 5%;
+    margin-right: 40px;
+}
+
 @media only screen and (max-width: 600px){
     .link{
         display: none;
@@ -241,4 +278,44 @@ text-overflow: ellipsis;
 
 .India, .para, .p2 {
     text-align: center;
+}
+@media(max-width: 1110px){
+    .GetTheApp .left ,
+     .GetTheApp .right{
+        flex: 1;
+    }
+    .GetTheApp{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Explore{
+        width: 100%;
+    }
+    .Exp button{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+    .Exp p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 900px){
+    .GetTheApp{
+    padding: 40px;
+    width: 100%;
+    
+    }
+    .GetTheApp .right{
+        padding: 40px;
+        gap: 15px; ;
+    }
+    .GetTheApp .applink  button{
+        padding-top: 15px;
+    }
 }
