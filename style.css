@@ -235,7 +235,86 @@ text-overflow: ellipsis;
     border-radius: 5%;
     margin-right: 40px;
 }
+.foot{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: auto;
 
+}
+.OnePart img{
+width: 150px;
+height: 30px;
+margin-bottom: 50px;
+margin-left: 30px;
+}
+.but{
+    display: flex;
+    margin-bottom: 50px;
+    margin-right: 140px;
+}
+.but button{
+    
+    width: 120px;
+    height: 35px;
+    font-size: medium;
+    margin-right: 20px;
+    border: 1px solid grey;
+    border-radius: 10%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Twopart{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 25px;
+width: 90%;
+margin-bottom: 50px;
+}
+.Onecol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30px;
+}
+.Onecol h5{
+font-weight: 500;
+font-size: 15px;
+margin-bottom: 5px;
+letter-spacing: 0.8px;
+}
+.Flink{
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+    font-size: 16px;
+}
+.Flink:hover{
+    color: black;
+}
+.icons button{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+.icons img{
+    width: 150px;
+}
+.icons button i{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 @media only screen and (max-width: 600px){
     .link{
         display: none;
@@ -274,18 +353,33 @@ text-overflow: ellipsis;
     .location {
         flex-direction: column;
     }
+    .India, .para, .p2 {
+        text-align: justify;
+    }
+    .India{
+        font-size: 20px;
+    }
+    .para, .p2{
+        font-size: 10px;
+    }
+    .flags{
+        height: 25px;
+        width: 30px;
+    }
 }
 
 .India, .para, .p2 {
-    text-align: center;
+    text-align: justify;
 }
+
+
 @media(max-width: 1110px){
     .GetTheApp .left ,
      .GetTheApp .right{
         flex: 1;
     }
     .GetTheApp{
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -317,5 +411,10 @@ text-overflow: ellipsis;
     }
     .GetTheApp .applink  button{
         padding-top: 15px;
+    }
+}
+@media(max-width: 900px){
+    .Twopart{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
